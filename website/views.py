@@ -202,6 +202,54 @@ def search():
 
     return render_template('search.html')
 
+#--------------------contact-----------------------
+
+@views.route('/about')
+def about():
+    return render_template("about.html")
+
+
+# ------------------------about-contact--end-------------------------
+
+@views.route('/supermarket')
+def supermarket():
+    return render_template("supermarket.html")
+
+@views.route('/healthbeauty')
+def healthbeauty():
+    return render_template("healthbeauty.html")
+
+@views.route('/homeoffice')
+def homeoffice():
+    return render_template("homeoffice.html")
+
+@views.route('/fashion')
+def fashion():
+    return render_template("fashion.html")
+
+@views.route('/electronics')
+def electronics():
+    return render_template("electronics.html")
+
+@views.route('/gaming')
+def gaming():
+    return render_template("gaming.html")
+
+@views.route('/babyproducts')
+def babyproducts():
+    return render_template("babyproducts.html")
+
+@views.route('/sportinggoods')
+def sportinggoods():
+    return render_template("sportinggoods.html")
+
+@views.route('/garden')
+def garden():
+    return render_template("garden.html")
+
+@views.route('/wishlist')
+def wishlist():
+    return render_template("wishlist.html")
 
 
 

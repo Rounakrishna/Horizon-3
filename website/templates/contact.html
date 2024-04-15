@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact Us {% endblock %}
+
+{% block body %}
+
+<div class="col text-center" style="margin: 3px;">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or concerns, feel free to reach out to us.</p>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <p>Email: example@example.com</p>
+        </div>
+        <div class="col-sm-6">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <p>Phone: +1234567890</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <h4>Our Location</h4>
+            <p>123 Street Name, City, Country</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <h4>Send us a message</h4>
+            <!-- Add your contact form here -->
+            <form action="/contact" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
